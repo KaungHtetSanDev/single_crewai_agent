@@ -1,0 +1,16 @@
+ValidateCustomerInformation:
+  description: >
+      Extract customer information (name, phone, email) from the 'inputs' and validate the data.
+      The task involves:
+      1. Parsing the input to extract the customer's name, phone number, and email address.
+      2. Validating the extracted data against predefined rules:
+         - Name: Must not be empty and should be at least 2 characters long.
+         - Phone: Must match a valid format (e.g., +1-123-456-7890).
+         - Email: Must match a valid email format.
+      3. If any errors are found, provide detailed feedback to the user for correction.
+      4. If the data is valid, confirm successful validation.
+      5. output just short and keypoint of the message. for example if invalid, message will be 'your input is invalid'. If it is valid, message will be 'You submission is successful.'
+  expected_output: >
+      A report indicating whether the input data is valid or invalid. If invalid, provide detailed feedback 
+      on what needs to be corrected (e.g., "Invalid phone number format", "Email address is missing"). 
+      If valid, return a confirmation message stating that the data has been successfully validated.
